@@ -3,7 +3,7 @@
 #### GENERAL DATALAYER ####
 ###########################
 
-//General dataLayer on all pages. Loaded before Google Analytics Pageview is fired
+//General dataLayer on all car pages. Loaded before Google Analytics Pageview is fired
 
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
@@ -24,6 +24,25 @@ window.dataLayer.push({
         'color': 'Valkoinen',
         'rawData': 'brand:BMW|model:5-sarja|type:vaihtoauto|mileage:23000|fueltype:diesel...'
       },
+    'user':{
+        'omalaakkonenId': 'ASDFGHJKQWERTYU123456',
+        'omalaakkonenCarBrand': 'BMW',
+        'loggedInToOmalaakkonen': 'Yes',
+        'abTestGroup': '1'
+      },
+    'page':{
+        'type': 'Autokortti',
+        'brandEnvironment': 'BMW',
+        'lastUpdated': '2019-07-21', //YYYY-MM-DD
+        'responseCode': '200' //404, 500
+      }
+});
+
+//General dataLayer on all other pages. Loaded before Google Analytics Pageview is fired
+
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+    'event':'General dataLayer',
     'user':{
         'omalaakkonenId': 'ASDFGHJKQWERTYU123456',
         'omalaakkonenCarBrand': 'BMW',
