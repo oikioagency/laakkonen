@@ -26,7 +26,7 @@ window.dataLayer.push({
       },
     'user':{
         'omalaakkonenId': 'ASDFGHJKQWERTYU123456',
-        'omalaakkonenCarBrand': 'BMW',
+        'omalaakkonenCarBrand': 'BMW|Seat|Volkswagen', //Array of owned brands
         'loggedInToOmalaakkonen': 'Yes',
         'abTestGroup': '1'
       },
