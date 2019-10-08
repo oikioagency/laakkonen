@@ -1,4 +1,4 @@
-
+# Prioriteetti 2
 ###########################
 #### GENERAL DATALAYER ####
 ###########################
@@ -13,28 +13,29 @@ window.dataLayer.push({
         'model': '5-sarja',
         'type': 'Vaihtoauto',
         'vehicleType': 'Pakettiauto',
-        'dealType': 'Fiksudiili',
-        'registerId': 'ABC-123',
+        'dealType': 'Fiksudiili', //jos ei diiliä, jätetään tyhjäksi
+        'registerId': 'ABC-123', //uusissa autoissa jätetään tyhjäksi
         'price': 23000,
-        'constructionYear': '2010',
+        'constructionYear': '2010', 
         'outlet': 'Ford Espoo',
-        'mileage': 120000,
+        'mileage': 120000, //uusissa autoissa 0
         'transmission': 'Automaatti',
         'fuel': 'Diesel',
         'color': 'Valkoinen',
+        'dateAdded': '2019-07-21',
         'rawData': 'brand:BMW|model:5-sarja|type:vaihtoauto|mileage:23000|fueltype:diesel...'
       },
     'user':{
-        'omalaakkonenId': 'ASDFGHJKQWERTYU123456',
+        'omalaakkonenId': 'ASDFGHJKQWERTYU123456', //Jos ei ole kirjautunut niin tyhjä
         'omalaakkonenCarBrand': 'BMW|Seat|Volkswagen', //Array of owned brands
         'loggedInToOmalaakkonen': 'Yes',
-        'abTestGroup': '1'
+        'abTestGroup': '1' //jätetään arvo tyhjäksi
       },
     'page':{
         'type': 'Autokortti',
-        'brandEnvironment': 'BMW',
+        'brandEnvironment': 'BMW', //Kun merkkisivusto tulee
         'lastUpdated': '2019-07-21', //YYYY-MM-DD
-        'responseCode': '200' //404, 500
+        'responseCode': '200' //tai 404
       }
 });
 
@@ -50,14 +51,14 @@ window.dataLayer.push({
         'abTestGroup': '1'
       },
     'page':{
-        'type': 'Autokortti',
+        'type': 'Etusivu', //Hakutulos, Sisältösivu (url:n ensimmäinen taso kertoo sivutyypin)
         'brandEnvironment': 'BMW',
         'lastUpdated': '2019-07-21', //YYYY-MM-DD
         'responseCode': '200' //404, 500
       }
 });
 
-
+# Prioriteetti 1
 ################################
 ####      CONVERSIONS       ####
 #### KAUPALLISET KONVERSIOT ####
@@ -76,7 +77,7 @@ window.dataLayer.push({
   }
 });
 
-
+# Prioriteetti 4
 #########################
 #### UI INTERACTIONS ####
 #########################
@@ -126,7 +127,7 @@ window.dataLayer.push({
 
 
 
-
+# Prioriteetti 3
 ####################
 #### CAR SEARCH ####
 ####################
@@ -195,6 +196,7 @@ window.dataLayer.push({
     }
 });
 
+# Prioriteetti 5
 #####################
 #### SITE SEARCH ####
 #####################
@@ -205,7 +207,7 @@ window.dataLayer.push({
   'event':'Site search',
   'searchInput': 'Tässä on hakulauseke'
 });
-
+# Prioriteetti 5
 ##############
 #### CHAT ####
 ##############
