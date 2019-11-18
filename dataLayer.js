@@ -218,3 +218,24 @@ window.dataLayer.push({
   'event':'Chat event',
   'chatEventType': 'User sent message' //Operator sent message, Operator sent automated message, User opened chat, User closed chat
 });
+
+# Prioriteetti 5
+####################
+#### FIKSUDIILI ####
+####################
+
+//fiksudiili search events, fired each time a change is made
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  'event':'Fiksudiili',
+  'fiksudiili':{
+      'monthlyprice': '150-249',
+      'brand': 'BMW',
+      'model': '5-sarja',
+      'dealperiod': '48kk/60000km',
+      'fuel': 'Diesel',
+      'transmission': 'Automaatti',
+      'availability': 'Heti saatavilla',
+      'greendiili': 'true',
+    }
+});
