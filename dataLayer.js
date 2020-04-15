@@ -27,7 +27,8 @@ window.dataLayer.push({
       },
     'user':{
         'omalaakkonenId': 'ASDFGHJKQWERTYU123456', //Jos ei ole kirjautunut niin tyhjä
-        'omalaakkonenCarBrand': 'BMW|Seat|Volkswagen', //Array of owned brands
+        'omalaakkonenOwnedCarBrand': 'BMW|Seat|Volkswagen', //Array of owned brands
+        'omalaakkonenIntrestedCarBrand': 'BMW|Seat|Volkswagen', //Array of brands user has intrest in
         'loggedInToOmalaakkonen': 'Yes',
         'abTestGroup': '1' //jätetään arvo tyhjäksi
       },
